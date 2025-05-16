@@ -1,6 +1,8 @@
 # FastAPI Quantum Random Number Generator (QRNG)
 
 This repository provides a **FastAPI-based API** that generates **quantum random numbers** using Qiskit's quantum circuit simulator.
+![Quantum Circuit](quantum_circuit.png)
+
 
 ## Features
 - Generates **true quantum-random** numbers (not pseudorandom)

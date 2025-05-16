@@ -1,0 +1,4 @@
+fastapi==0.115.12
+qiskit==2.0.0
+qiskit-aer==0.17.0
+uvicorn==0.34.2

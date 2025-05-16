@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 # MIT/X Consortium License
-# © 2023 mahmoudElshimi <mahmoudelshimi@protonmail.ch>
+# © 2025 mahmoudElshimi <mahmoudelshimi@protonmail.ch>
 
 from fastapi import FastAPI, Query
 from fastapi.responses import JSONResponse

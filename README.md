@@ -43,7 +43,7 @@ curl "http://localhost:8000/random?length=64&min=100&max=1000"
 
 ---
 
-##  Installation & Setup
+##  Installation & Run
 
 ### **Requirements**
 - python==3.13
@@ -69,6 +69,12 @@ or
 uvicorn main:app --reload
 ```
 Access the API at: `http://localhost:8000`
+
+### **Run With Docker**
+```bash
+docker build -t quantum-rng .
+docker run -p 8000:8000 quantum-rng
+```
 
 ---
 

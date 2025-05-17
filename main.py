@@ -13,13 +13,13 @@ import math
 app = FastAPI(title="QRNG API")
 
 
-def generate_quantum_random_bits(total_bits: int, chunk_size: int = 29) -> str:
+def generate_quantum_random_bits(total_bits: int, chunk_size: int = 25) -> str:
     """
     Generate a quantum random bits of length total_bits.
     
     Args:
         total_bits: Total number of bits to generate
-        chunk_size: Number of qubits to use per circuit (default 29, max for AerSimulator)
+        chunk_size: Number of qubits to use per circuit (default 25, max for AerSimulator)
     
     Returns:
         String of random bits
@@ -128,4 +128,4 @@ def get_random_number(
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="0.0.0.0", port=8000)

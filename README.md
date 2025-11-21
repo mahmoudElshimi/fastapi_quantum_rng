@@ -1,7 +1,10 @@
 # FastAPI Quantum Random Number Generator (QRNG)
 
-This repository provides a **FastAPI-based API** that generates **quantum random numbers** using Qiskit's quantum circuit simulator.
-![Quantum Circuit](quantum_circuit.png)
+This repository provides a **FastAPI-based API** that generates **quantum random numbers** using Qiskit's quantum circuit simulator, along with a **React/Vite** frontend to interact with it visually.
+
+![Frontend with ReactJS](frontend/reactjs.png)
+
+![Quantum Circuit](backend/quantum_circuit.png)
 
 
 ## Features
@@ -10,7 +13,7 @@ This repository provides a **FastAPI-based API** that generates **quantum random
 - Allows **range-bound** random numbers (min/max)
 - Uses **AerSimulator** for quantum circuit execution
 - **Chunked generation** for large bit requests (29 qubits at a time)
-
+- Interactive frontend with ReactJS to request quantum random numbers
 ### Note:
 This project follows **RTFM** (Read The F*cking Manual) and **KISS** (Keep It Simple, Stupid!) principles. Contributions and improvements welcome!
 
@@ -70,10 +73,9 @@ uvicorn main:app --reload
 ```
 Access the API at: `http://localhost:8000`
 
-### **Run With Docker**
+### **Run with Docker Compose**
 ```bash
-docker build -t quantum-rng .
-docker run -p 8000:8000 quantum-rng
+docker-compose up --build
 ```
 
 ---

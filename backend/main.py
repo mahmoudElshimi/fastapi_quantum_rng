@@ -4,6 +4,7 @@
 # © 2025 mahmoudElshimi <mahmoudelshimi@protonmail.ch>
 
 from fastapi import FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from qiskit import QuantumCircuit, transpile
 from qiskit_aer import AerSimulator
@@ -11,6 +12,14 @@ from typing import Optional
 import math
 
 app = FastAPI(title="QRNG API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 def generate_quantum_random_bits(total_bits: int, chunk_size: int = 25) -> str:

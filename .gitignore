@@ -172,3 +172,24 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+# Node modules
+frontend/node_modules/
+
+# Python cache
+backend/__pycache__/
+backend/*.pyc
+
+# Vite / build artifacts
+frontend/dist/
+frontend/.vite/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
